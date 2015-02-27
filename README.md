@@ -1,6 +1,6 @@
 # Vagrant Demo
 
-## Before we begin
+## Setup
 
 #### 1. Install VirtualBox
 

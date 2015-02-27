@@ -57,3 +57,27 @@ vagrant halt
 ```
 vagrant destroy
 ```
+
+## Synced Folders
+
+#### Start the VM
+
+```
+cd 001_synced_folders
+vagrant up
+```
+
+#### Connect and explore
+
+```
+vagrant ssh
+ls /vagrant
+less /sync_test/hello.txt
+```
+
+#### Destroy the VM
+
+```
+exit
+vagrant destroy
+```

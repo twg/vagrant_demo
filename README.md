@@ -13,4 +13,47 @@
 
 #### 3. Download the Ubuntu Trusty64 Base Box
 
- `$	vagrant box add ubuntu/trusty64	`
+```
+$ vagrant box add ubuntu/trusty64
+```
+ 
+## Basic VM from scratch
+
+
+#### Create a default Vagrantfile
+
+```
+$ cd 000_basic
+$ vagrant init ubuntu/trusty64
+```
+
+#### Start the VM
+
+```
+vagrant up
+```
+
+#### Connect
+
+```
+vagrant ssh
+```
+
+#### Disconnect
+
+```
+exit
+```
+
+#### Restart and Stop the VM
+
+```
+vagrant reload
+vagrant halt
+```
+
+#### Destroy the VM
+
+```
+vagrant destroy
+```

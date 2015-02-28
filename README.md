@@ -73,11 +73,43 @@ vagrant up
 vagrant ssh
 ls /vagrant
 less /sync_test/hello.txt
+exit
 ```
 
 #### Destroy the VM
 
 ```
+vagrant destroy
+```
+
+## Basic Provisioning
+
+#### Start the VM
+
+```
+cd 002_basic_provisioning
+vagrant up
+```
+
+#### Connect and view example 'provisioning log'
+
+```
+vagrant ssh
+less ~/provision.log
 exit
+```
+
+#### Disconnect and do a manual provisioning run
+
+```
+vagrant provision
+vagrant ssh
+less ~/provision.log
+exit
+```
+
+#### Destroy the VM
+
+```
 vagrant destroy
 ```

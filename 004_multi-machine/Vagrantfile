@@ -1,0 +1,14 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision "shell", inline: "echo Hello from global provisioner", privileged: false
+
+  config.vm.define "app" do |app|
+    app.vm.provision "shell", inline: "echo Hello from app provisioner", privileged: false
+  end
+
+  config.vm.define "db" do |db|
+    db.vm.provision "shell", inline: "echo Hello from db provisioner", privileged: false
+  end
+end

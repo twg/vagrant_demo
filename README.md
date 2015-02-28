@@ -136,3 +136,34 @@ exit
 ```
 vagrant destroy
 ```
+
+## Multi-Machine
+
+#### Start the VMs (plural!)
+
+```
+cd 004_multi-machine
+vagrant up
+```
+
+#### Connect to each VM
+
+```
+vagrant ssh app
+exit
+vagrant ssh db
+exit
+```
+
+#### Control VMs individually
+
+```
+vagrant halt app
+vagrant up app
+```
+
+#### Shutdown and destroy VMs
+
+```
+vagrant destroy
+```

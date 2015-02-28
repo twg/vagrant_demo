@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: install the latest version of sl - choo! choo!
+      apt: pkg=sl state=latest

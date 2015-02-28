@@ -113,3 +113,26 @@ exit
 ```
 vagrant destroy
 ```
+
+## Advanced Provisioning
+
+#### Start the VM
+
+```
+cd 003_advanced_provisioning
+vagrant up
+```
+
+#### Connect and enjoy
+
+```
+vagrant ssh
+sl
+exit
+```
+
+#### Destroy the VM
+
+```
+vagrant destroy
+```

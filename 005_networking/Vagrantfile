@@ -1,0 +1,11 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "playbook.yml"
+    ansible.sudo = true
+  end
+  config.vm.network :private_network, ip: '10.0.0.101'
+  config.vm.network :forwarded_port, host: 8080, guest: 80
+end

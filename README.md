@@ -167,3 +167,36 @@ vagrant up app
 ```
 vagrant destroy
 ```
+
+## Networking
+
+#### Start the VM
+
+```
+cd 005_networking
+vagrant up
+```
+
+#### View the nginx default page in your browser
+
+* Via localhost: [http://locahost:8080](http://localhost:8080)
+* Via the private network: [http://10.0.0.101](http://10.0.0.101)
+
+##### _Aside: [Vagrant DNS](https://github.com/BerlinVagrant/vagrant-dns)_
+
+##### _Aside: [Pow](http://pow.cx)_
+
+Localhost:
+
+* `echo 8080 > ~/.pow/myapp`
+
+Private network:
+
+* `echo http://10.0.0.101 > ~/.pow/myapp`
+
+
+#### Shutdown and destroy VMs
+
+```
+vagrant destroy
+```

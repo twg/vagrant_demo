@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: install the latest version of nginx
+      apt: pkg=nginx state=latest

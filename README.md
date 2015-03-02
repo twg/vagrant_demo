@@ -218,3 +218,7 @@ vagrant destroy
 #### Docker
 
 [https://www.docker.com](https://www.docker.com)
+
+#### Vagrant Demo PowerPoint
+
+[https://docs.google.com/a/theworkinggroup.ca/presentation/d/1hW8Q44T9eiXncVBynZIY4JdDPyZa10XNj0p64jXZSgk/edit?usp=sharing]

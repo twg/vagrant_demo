@@ -17,7 +17,7 @@
 $ vagrant box add ubuntu/trusty64
 ```
  
-## Basic VM from scratch
+## 0. Basic VM from scratch
 
 
 #### Create a default Vagrantfile
@@ -58,7 +58,7 @@ vagrant halt
 vagrant destroy
 ```
 
-## Synced Folders
+## 1. Synced Folders
 
 #### Start the VM
 
@@ -82,7 +82,7 @@ exit
 vagrant destroy
 ```
 
-## Basic Provisioning
+## 2. Basic Provisioning
 
 #### Start the VM
 
@@ -114,7 +114,7 @@ exit
 vagrant destroy
 ```
 
-## Advanced Provisioning
+## 3. Advanced Provisioning
 
 #### Start the VM
 
@@ -137,7 +137,7 @@ exit
 vagrant destroy
 ```
 
-## Multi-Machine
+## 4. Multi-Machine
 
 #### Start the VMs (plural!)
 
@@ -168,7 +168,7 @@ vagrant up app
 vagrant destroy
 ```
 
-## Networking
+## 5. Networking
 
 #### Start the VM
 
@@ -200,3 +200,21 @@ Private network:
 ```
 vagrant destroy
 ```
+
+## Further Reading
+
+#### Plugins
+
+[http://docs.vagrantup.com/v2/plugins/index.html](http://docs.vagrantup.com/v2/plugins/index.html)
+
+#### Providers
+
+[http://docs.vagrantup.com/v2/providers/index.html](http://docs.vagrantup.com/v2/providers/index.html)
+
+#### Ansible
+
+[http://www.ansible.com/resources](http://www.ansible.com/resources)
+
+#### Docker
+
+[https://www.docker.com](https://www.docker.com)
